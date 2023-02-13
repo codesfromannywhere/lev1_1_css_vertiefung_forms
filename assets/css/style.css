@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+	padding: 10%;
+	color: #444;
+    width: 50vw;
+	margin: 0 auto;
+	background-color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+	display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+}
+div {
+    margin-bottom: 2%;
+}
+
+div label {
+    display: flex;
+    font-size: 25px;
+    padding: 2% 0;
+}
+
+::placeholder {
+    padding-left: 3%;
+}
+
+.field_small {
+    width: 200px;
+    height: 30px;
+}
+
+.field_long {
+    width: 400px;
+    height: 30px;
+}
+.textarea {
+    width: 400px;
+    height: 200px;
+}
+
+.button {
+    color: white;
+    background-color: turquoise;
+    padding: 2% 3%;
+    border: none;
+    width: 400px
+}
+
+.required::after {
+    color: red;
+    content: "*";
+    padding-left: 2%;
+}
